@@ -1,26 +1,15 @@
-student_scores = {
-    "Deepak": 88,
-    "Smriti": 98,
-    "Golu": 78,
-    "Nisha": 68,
-    "Vijai Kumar": 99,
-    "Ratna": 77
+capitals = {
+    "France": "Paris",
+    "Germany": "Berlin",
 }
 
-student_grades = {}
+travel_log = {
+    "France": ["Paris", "Lillie", "Dijon"],
+    "Germany": ["Stuttgart", "Berlin"]
+}
 
-for student in student_scores:
-    score = student_scores[student]
+print(travel_log["France"][1])
 
-    if score >=90:
-        student_grades[student] = "A"
-    elif score >=75:
-        student_grades[student] = "B"
-    elif score >=60:
-        student_grades[student] = "C"
-    elif score >=40:
-        student_grades[student] = "D"
-    else:
-        student_grades[student] = "F"
+nested_list = ["A", "B", ["C", "D"]]
 
-print(student_grades)
+print(nested_list[2][1])
